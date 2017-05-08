@@ -42,7 +42,17 @@
     3.2 撤销暂存区修改, git reset HEAD [文件名], git reset命令既可以回退版本，也可以把暂存区的修改回退到工作区。当我们用HEAD时，表示最新的版本
 4. git rm [文件名], 用于删除版本库中的文件, 一旦删除无法用 git checkout -- [文件名] 命令恢复, 只能用版本回退恢复
 
-### 远程仓库
+### 关联远程仓库
+1. 关联远程仓库: git remote add origin git@server-name:path/repo-name.git
+2. 把远程仓库拉取下来: git pull origin master --allow-unrelated-histories
+3. 把本地仓库 push 到远程仓库 git push -u orgin master
+
+### 从远程仓库克隆
+1. 从远程仓库 clone: git clone git@github.com:[用户名]/[repo名].git
+2. git 可以使用多种协议, 如 https, 但是 https 速度慢, 而且每次必须输入口令, 在有些公司只有 http 的端口, 就不能用了
+
+### 分支管理
+
 
 
 
